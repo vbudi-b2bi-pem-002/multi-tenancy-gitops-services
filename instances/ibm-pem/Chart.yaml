@@ -8,5 +8,5 @@ dependencies:
     version: 0.5.0
     repository: https://charts.cloudnativetoolkit.dev
   - name: ibm-pem-standard-vbudi
-    version: 1.0.0
+    version: 1.0.1
     repository: https://vbudi000.github.io/gitops-helm-repo
