@@ -566,7 +566,7 @@ ibm-pem-standard-vbudi:
   communitymanager:
     install: true
     image:
-      repository: "cp.icr.io/cp/ibm-pem/pem-cm" #Specify the repository
+      repository: "cp.icr.io/cp/ibm-pem/pem_cm" #Specify the repository
       pullPolicy:  #Specify te image pull policy
       tag: "6.2.0.2" #Specify the tag name
       pullSecret: ibm-entitlement-key #Provide the pull secret name
