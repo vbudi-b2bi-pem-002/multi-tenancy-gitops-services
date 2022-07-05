@@ -17,18 +17,18 @@ ibm-sfg-prod:
   appResourcesPVC:
     enabled: true
     name: resources
-    storageClassName: ibmc-file-gold
+    storageClassName: ocs-storagecluster-cephfs
     accessMode: ReadWriteMany
     size: 100Mi
   appLogsPVC:
     name: logs
-    storageClassName: ibmc-file-gold
+    storageClassName: ocs-storagecluster-cephfs
     accessMode: ReadWriteMany
     size: 500Mi
   appDocumentsPVC:
     enabled: true
     name: documents
-    storageClassName: ibmc-file-gold
+    storageClassName: ocs-storagecluster-cephfs
     accessMode: ReadWriteMany
     size: 500Mi
   security:
@@ -60,7 +60,7 @@ ibm-sfg-prod:
     nistComplianceMode: "off"
     # Provide the DB attributes
     dbVendor: db2
-    dbHost: 172.30.136.143
+    dbHost: db2-lb.b2bi-nonprod.svc
     dbPort: 50000
     dbData: B2BIDB
     dbDrivers: db2jcc4.jar
@@ -80,9 +80,9 @@ ibm-sfg-prod:
     jmsConnectionFactory: com.ibm.mq.jms.MQQueueConnectionFactory
     jmsConnectionFactoryInstantiator:
     jmsQueueName: DEV.QUEUE.1
-    jmsHost: 172.30.32.144
+    jmsHost: mq-data.b2bi-nonprod.svc
     jmsPort: 1414
-    jmsConnectionNameList: 172.30.32.144(1414)
+    jmsConnectionNameList: mq-data.b2bi-nonprod.svc(1414)
     jmsEnableSsl: false
     jmsChannel: DEV.APP.SVRCONN
     # Name of JMS secret if available

@@ -11,11 +11,11 @@ APP_RESOURCES_PVC_ENABLED=${APP_RESOURCES_PVC_ENABLED:-"true"}
 APP_DOCUMENTS_PVC_ENABLED=${APP_DOCUMENTS_PVC_ENABLED:-"true"}
 DATASETUP_ENABLED=${DATASETUP_ENABLED:-"true"}
 #DBHOST=$(oc get svc db2-lb -n ${NS} -o jsonpath='{ .status.loadBalancer.ingress[0].ip}')
-DBHOST=$(oc get svc db2-lb -n ${NS} -o jsonpath='{ .spec.clusterIP}')
+DBHOST="db2-lb.$NS.svc"
 DBPORT=$(oc get svc db2-lb -n ${NS} -o jsonpath='{ .spec.ports[0].port}')
 DBDATA=${DBDATA:-"B2BIDB"}
 DBCREATESCHEMA=${DBCREATESCHEMA:-"true"}
-JMSHOST=$(oc get svc mq-data -n ${NS} -o jsonpath='{ .spec.clusterIP}')
+JMSHOST="mq-data.${NS}.svc"
 JMSPORT=$(oc get svc mq-data -n ${NS} -o jsonpath='{ .spec.ports[0].port}')
 JMSCONNECTIONNAMELIST="$JMSHOST($JMSPORT)"
 JSMCHANNEL=${JSMCHANNEL:-"DEV.APP.SVRCONN"}
