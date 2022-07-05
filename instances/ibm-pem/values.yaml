@@ -236,7 +236,7 @@ ibm-pem-standard-vbudi:
         #For example, jvm_options: "-Xms4g -Xmx4g".
         jvm_options: # Specify the list of JVM options for the servers, and separated by space.
 
-        keystore_password: password #Specify the secret name
+        keystore_password: ibm-pem-secret #Specify the secret name
         keystore_alias: pem #Specify the secret alias
         keystore_filename: ibm-pem.jks #Specify the secret name and key inside secret has to be same as secret name
 
@@ -289,7 +289,7 @@ ibm-pem-standard-vbudi:
         #Repository, and Partner Provisioner. The keystore file (.jks file) has to be
         #copied in the <mount location>/resources/security folder.
         #Provide the secret name
-        keystore_password: password #Specify the secret name
+        keystore_password: ibm-pem-secret #Specify the secret name
         keystore_alias: pem #Specify the secret alias
         keystore_filename: ibm-pem.jks #Specify the secret name and key inside secret has to be same as secret name
         # The default value is 100 MB.
@@ -358,7 +358,7 @@ ibm-pem-standard-vbudi:
         #For example, jvm_options: "-Xms4g -Xmx4g".
         jvm_options: ## Specify the list of JVM options for the servers, and separated by space.
 
-        keystore_password: password #Specify the secret name
+        keystore_password: ibm-pem-secret #Specify the secret name
         keystore_alias: pem #Specify the secret alias
         keystore_filename: ibm-pem.jks #Specify the secret name and key inside secret has to be same as secret name
         # The default value is 100 MB.
@@ -542,7 +542,7 @@ ibm-pem-standard-vbudi:
 
         jvm_options: ## Specify the list of JVM options for the servers, and separated by space. For example, jvm_options: "-Xms4g -Xmx4g".
 
-        keystore_password: password #Specify the secret name
+        keystore_password: ibm-pem-secret #Specify the secret name
         keystore_alias: pem #Specify the secret alias
         keystore_filename: ibm-pem.jks #Specify the secret name and key inside secret has to be same as secret name
 
