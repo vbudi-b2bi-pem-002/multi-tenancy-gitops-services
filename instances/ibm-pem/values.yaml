@@ -3,7 +3,7 @@ service-account:
   create: false
   sccs: ["anyuid"]
 
-ibm-pem-standard-prod:
+ibm-pem-standard-vbudi:
   image:
     name: "cp.icr.io/cp/ibm-pem/pem" #Provide the value in double quotes
     tag: "6.2.0.2" #Specify the tag name
