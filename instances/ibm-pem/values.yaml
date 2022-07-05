@@ -625,7 +625,7 @@ ibm-pem-standard-vbudi:
             host: smtp.hostname.com
             port: 587 #25
             username: UserName@company.com #Specify the username exmaple: username@compnay.com
-            cmks: Mailpassword #Provde the password secret
+            cmks: ibm-pem-secret #Provde the password secret
             from: from_mailid@company.com
             app_contact_mail: app_contact_mailid@company.com
             mail_signature: "Community Manager Portal support team."
@@ -708,7 +708,7 @@ ibm-pem-standard-vbudi:
           active: false #if we have SSP APIs enable then make it as true or else false
           api:
             username: ssp_user #User name to authenticate the API
-            cmks: SSP_Password #Password or Secret of the above user
+            cmks: ibm-pem-secret #Password or Secret of the above user
             baseUrl: #Provide  Base URL of the SSP API
         adapters: #Profiles Default Adapters Details Configuration
           ftpServerAdapterName: CM_FTPServerAdapter #Specify the respective adapter name
@@ -781,7 +781,7 @@ ibm-pem-standard-vbudi:
             active: true
             base_url: #specify the url
             username: PEMUsername
-            cmks: PEMPassword #specify the secret name
+            cmks: ibm-pem-secret #specify the secret name
         file:
           archive:
             scheduler:
@@ -931,7 +931,7 @@ ibm-pem-standard-vbudi:
             host: smtp.hostname.com
             port: 587 #25
             username: UserName@company.com #Specify the username exmaple: username@compnay.com
-            cmks: Mailpassword #Provde the password secret
+            cmks: ibm-pem-secret #Provde the password secret
             from: from_mailid@company.com
             app_contact_mail: app_contact_mailid@company.com
             mail_signature: "Community Manager Portal support team."
@@ -1014,7 +1014,7 @@ ibm-pem-standard-vbudi:
           active: false #if we have SSP APIs enable then make it as true or else false
           api:
             username: ssp_user #User name to authenticate the API
-            cmks: SSP_Password #Password or Secret of the above user
+            cmks: ibm-pem-secret #Password or Secret of the above user
             baseUrl: #Provide  Base URL of the SSP API
         adapters: #Profiles Default Adapters Details Configuration
           ftpServerAdapterName: CM_FTPServerAdapter #Specify the respective adapter name
@@ -1087,7 +1087,7 @@ ibm-pem-standard-vbudi:
             active: true
             base_url: #specify the url
             username: PEMUsername
-            cmks: PEMPassword #specify the secret name
+            cmks: ibm-pem-secret #specify the secret name
         file:
           archive:
             scheduler:
