@@ -569,7 +569,7 @@ ibm-pem-standard-vbudi:
       repository: "cp.icr.io/cp/ibm-pem/pem-cm" #Specify the repository
       pullPolicy:  #Specify te image pull policy
       tag: "6.2.0.2" #Specify the tag name
-      pullSecret: #Provide the pull secret name
+      pullSecret: ibm-entitlement-key #Provide the pull secret name
     prod:
       enable: true #If you are want to proceed for prod pcm installation then you have to mention it as true or else false
       setupfile:
@@ -599,7 +599,7 @@ ibm-pem-standard-vbudi:
             type: com.zaxxer.hikari.HikariDataSource # This should be constant, please dont change
             url: "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCPS)(HOST=DB_Host)(PORT=2484))(CONNECT_DATA=(SID=ORCL)))" # Specify the database url  example for jdbc:oracle:thin:@localhost:1521/XE
             username: Username #Specify the database user naem
-            dbpassword: #secretName
+            dbpassword: ibm-pem-secret #secretName
             driver_class_name: oracle.jdbc.driver.OracleDriver #Specify the dirver class name
             hikari:
               connection_timeout: 60000 #Connection timeout
@@ -905,7 +905,7 @@ ibm-pem-standard-vbudi:
             type: com.zaxxer.hikari.HikariDataSource # This should be constant, please dont change
             url: "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCPS)(HOST=DB_Host)(PORT=2484))(CONNECT_DATA=(SID=ORCL)))" # Specify the database url  example for jdbc:oracle:thin:@localhost:1521/XE
             username: Username #Specify the database user naem
-            dbpassword: #secretName
+            dbpassword: ibm-pem-secret #secretName
             driver_class_name: oracle.jdbc.driver.OracleDriver #Specify the dirver class name
             hikari:
               connection_timeout: 60000 #Connection timeout
