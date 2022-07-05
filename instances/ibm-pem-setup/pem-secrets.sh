@@ -112,8 +112,7 @@ oc create secret generic ibm-pem-cm-secret-nonprod --type=Opaque \
 kubeseal -n ${NS} --controller-name=${SEALED_SECRET_CONTOLLER_NAME} --controller-namespace=${SEALED_SECRET_NAMESPACE} -o yaml < delete-ibm-pem-cm-secret-nonprod.yaml > ibm-pem-cm-secret-nonprod.yaml
 rm delete-ibm-pem-cm-secret-nonprod.yaml
 DOMAIN=$(oc get ingresscontroller -n openshift-ingress-operator   default -o jsonpath='{.status.domain}')
-
-keytool -genkey -keystore ibm-pem.jks -storepass ${SERVER_KEYSTORE_PASSWORD} -alias pem -dname "CN=*.${DOMAIN}" -keypass ${SERVER_KEYSTORE_PASSWORD}
+keytool -genkey -keystore ibm-pem.jks -storepass ${SERVER_KEYSTORE_PASSWORD} -alias pem -dname "CN=*.${DOMAIN}" -keypass ${SERVER_KEYSTORE_PASSWORD} -sigalg SHA256withRSA -keyalg RSA
 
 oc create secret generic ibm-pem.jks --type=Opaque --from-file ibm-pem.jks --dry-run=client -o yaml > delete-ibm-pem-jks.yaml
 kubeseal -n ${NS} --controller-name=${SEALED_SECRET_CONTOLLER_NAME} --controller-namespace=${SEALED_SECRET_NAMESPACE} -o yaml < delete-ibm-pem-jks.yaml > ibm-pem-jks.yaml
