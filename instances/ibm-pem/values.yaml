@@ -229,7 +229,7 @@ ibm-pem-standard-vbudi:
     hostname: #specify the route dns host to access IBM PEM if not set default hostname will be generated
     route:
       tls:
-        termination: reencrypt #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
+        termination: passthrough #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
         insecureEdgeTerminationPolicy: None #Specify policy for traffic on insecure schemes like HTTP.
     setupfile:
       servers:
@@ -278,7 +278,7 @@ ibm-pem-standard-vbudi:
     hostname: #specify the route dns host to access Partner Provisioner if not set default hostname will be generated
     route:
       tls:
-        termination: reencrypt #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
+        termination: passthrough #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
         insecureEdgeTerminationPolicy: None #Specify policy for traffic on insecure schemes like HTTP.
     setupfile:
       servers:
@@ -350,7 +350,7 @@ ibm-pem-standard-vbudi:
     hostname: #specify the route dns host to access Partner Provisioner if not set default hostname will be generated
     route:
       tls:
-        termination: reencrypt #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
+        termination: passthrough #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
         insecureEdgeTerminationPolicy: None #Specify policy for traffic on insecure schemes like HTTP.
     setupfile:
       servers:
@@ -535,7 +535,7 @@ ibm-pem-standard-vbudi:
     hostname: #specify the route dns host to access gateway IMPORTANT in order to enable api this property must be set
     route:
       tls:
-        termination: reencrypt #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
+        termination: passthrough #Specify TLS termination types for serving certificates for securing the route. PEM currently supports reencrypt termination only.
         insecureEdgeTerminationPolicy: None #Specify policy for traffic on insecure schemes like HTTP.
     setupfile:
       servers:
