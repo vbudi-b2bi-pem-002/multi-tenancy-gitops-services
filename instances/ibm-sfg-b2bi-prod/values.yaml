@@ -60,7 +60,7 @@ ibm-sfg-prod:
     nistComplianceMode: "off"
     # Provide the DB attributes
     dbVendor: db2
-    dbHost: 172.30.176.5
+    dbHost: 172.30.152.145
     dbPort: 50000
     dbData: B2BIDB
     dbDrivers: db2jcc4.jar
@@ -80,9 +80,9 @@ ibm-sfg-prod:
     jmsConnectionFactory: com.ibm.mq.jms.MQQueueConnectionFactory
     jmsConnectionFactoryInstantiator:
     jmsQueueName: DEV.QUEUE.1
-    jmsHost: 172.30.145.164
+    jmsHost: 172.30.67.74
     jmsPort: 1414
-    jmsConnectionNameList: 172.30.145.164(1414)
+    jmsConnectionNameList: 172.30.67.74(1414)
     jmsEnableSsl: false
     jmsChannel: DEV.APP.SVRCONN
     # Name of JMS secret if available
@@ -157,7 +157,7 @@ ibm-sfg-prod:
           protocol: TCP
     ingress:
       internal:
-        host: asi-b2bi-prod.apps.vbudi-pem-002.cp.fyre.ibm.com
+        host: asi-b2bi-prod.apps.vbudi-pem-003.cp.fyre.ibm.com
         tls:
           enabled: true
           secretName: ""
@@ -213,7 +213,7 @@ ibm-sfg-prod:
         #  protocol: TCP
     ingress:
       internal:
-        host: ac-b2bi-prod.apps.vbudi-pem-002.cp.fyre.ibm.com
+        host: ac-b2bi-prod.apps.vbudi-pem-003.cp.fyre.ibm.com
         tls:
           enabled: true
           secretName: ""
@@ -247,7 +247,7 @@ ibm-sfg-prod:
         # protocol: TCP
     ingress:
       internal:
-        host: api-b2bi-prod.apps.vbudi-pem-002.cp.fyre.ibm.com
+        host: api-b2bi-prod.apps.vbudi-pem-003.cp.fyre.ibm.com
         tls:
           enabled: true
           secretName: ""
