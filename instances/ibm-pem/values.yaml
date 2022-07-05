@@ -681,7 +681,7 @@ ibm-pem-standard-vbudi:
               active: true
               api:
                 username: cm_user
-                cmks: password #ENC(KKtUwo6lrp1At7pa/fUn4g==)
+                cmks: ibm-pem-secret #ENC(KKtUwo6lrp1At7pa/fUn4g==)
                 baseUrl:
             as2: #true : If AS2 API Available in B2Bi APIs and if you want to use it from CM
               active: false
@@ -987,7 +987,7 @@ ibm-pem-standard-vbudi:
               active: true
               api:
                 username: cm_user
-                cmks: password #ENC(KKtUwo6lrp1At7pa/fUn4g==)
+                cmks: ibm-pem-secret #ENC(KKtUwo6lrp1At7pa/fUn4g==)
                 baseUrl:
             as2: #true : If AS2 API Available in B2Bi APIs and if you want to use it from CM
               active: false
