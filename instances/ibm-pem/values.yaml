@@ -581,7 +581,7 @@ ibm-pem-standard-vbudi:
           ssl:
             enabled: true #Application will try to enable SSL if it is true
             key_store: ibm-pem.jks #Application will try to load the key-store from this location if ssl enabled.
-            keystoresecret: ibm-pem-secret #secret for keystore
+            keystoresecret: ibm-pem.jks #secret for keystore
             key_store_password: ibm-pem-secret #keystorepass_secret
             key_store_type: JKS # PKCS12 #Here we need to provide keystore type
           serverHeader: "IBM Partner Engagement Manager Community Manager" #Default server header i,.e IBM Partner Engagement Manager Community Manager
