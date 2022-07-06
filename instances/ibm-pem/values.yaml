@@ -600,7 +600,7 @@ ibm-pem-standard-vbudi:
             url: jdbc:db2://db2-lb.b2bi-prod.svc:50000/B2BIDB #Datbase url example jdbc:\:thin:@DBHostname:1521/DBName
             username: DB2INST1 #Specify the database username
             dbpassword: ibm-pem-cm-secret-prod #Provide the sceret name
-            driver_class_name: orcom.ibm.db2.jcc.DB2Driver #Provide db driver class name Ex: 
+            driver_class_name: com.ibm.db2.jcc.DB2Driver #Provide db driver class name Ex: 
             hikari:
               connection_timeout: 60000 #Connection timeout
               maximum_pool_size: 40 # this actually depends on no of users access the application
@@ -776,7 +776,7 @@ ibm-pem-standard-vbudi:
             url: jdbc:db2://db2-lb.b2bi-prod.svc:50000/B2BIDB #Datbase url example jdbc::thin:@DBHostname:1521/DBName
             username: DB2INST1 #Specify the database username
             cmks: ibm-pem-secret #Provide the sceret name
-            driver_class_name: orcom.ibm.db2.jcc.DB2Driver #Provide db driver class name Ex: .jdbc.driver.
+            driver_class_name: com.ibm.db2.jcc.DB2Driver #Provide db driver class name Ex: .jdbc.driver.
           api_ws:
             active: true
             base_url: #specify the url
@@ -1082,7 +1082,7 @@ ibm-pem-standard-vbudi:
             url: jdbc:db2://db2-lb.b2bi-prod.svc:50000/B2BIDB #Datbase url example jdbc::thin:@DBHostname:1521/DBName
             username: DB2INST1 #Specify the database username
             cmks: ibm-pem-secret #Provide the sceret name
-            driver_class_name: orcom.ibm.db2.jcc.DB2Driver #Provide db driver class name Ex: .jdbc.driver.
+            driver_class_name: com.ibm.db2.jcc.DB2Driver #Provide db driver class name Ex: .jdbc.driver.
           api_ws:
             active: true
             base_url: #specify the url
