@@ -579,11 +579,11 @@ ibm-pem-standard-vbudi:
           cmks: #Provide the password secret
         server:
           ssl:
-            enabled: false #Application will try to enable SSL if it is true
-            key_store: keystore.p12 #Application will try to load the key-store from this location if ssl enabled.
-            keystoresecret: #secret for keystore
-            key_store_password: #keystorepass_secret
-            key_store_type: PKCS12 #Here we need to provide keystore type
+            enabled: true #Application will try to enable SSL if it is true
+            key_store: ibm-pem.jks #Application will try to load the key-store from this location if ssl enabled.
+            keystoresecret: ibm-pem-secret #secret for keystore
+            key_store_password: ibm-pem-secret #keystorepass_secret
+            key_store_type: JKS # PKCS12 #Here we need to provide keystore type
           serverHeader: "IBM Partner Engagement Manager Community Manager" #Default server header i,.e IBM Partner Engagement Manager Community Manager
           compression:
             enabled: true #Defualt is set to true  , Please don't change
