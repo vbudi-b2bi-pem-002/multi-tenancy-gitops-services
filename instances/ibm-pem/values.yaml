@@ -599,8 +599,7 @@ ibm-pem-standard-vbudi:
             type: com.zaxxer.hikari.HikariDataSource # This should be constant, please dont change
             url: jdbc:db2://db2-lb.b2bi-prod.svc:50000/B2BIDB #Datbase url example jdbc:\:thin:@DBHostname:1521/DBName
             username: DB2INST1 #Specify the database username
-            dbpassword: ibm-pem-secret #Provide the sceret name
-            cmks: ibm-pem-secret
+            dbpassword: ibm-pem-cm-secret-prod #Provide the sceret name
             driver_class_name: orcom.ibm.db2.jcc.DB2Driver #Provide db driver class name Ex: 
             hikari:
               connection_timeout: 60000 #Connection timeout
@@ -906,8 +905,7 @@ ibm-pem-standard-vbudi:
             type: com.zaxxer.hikari.HikariDataSource # This should be constant, please dont change
             url: "jdbc:db2://db2-lb.b2bi-prod.svc:50000/B2BIDB" # Specify the database url  example for jdbc::thin:@localhost:1521/XE
             username: DB2INST1 #Specify the database user naem
-            dbpassword: ibm-pem-secret #secretName
-            cmks: ibm-pem-secret
+            dbpassword: ibm-pem-cm-secret-nonprod #secretName
             driver_class_name: com.ibm.db2.jcc.DB2Driver #Specify the dirver class name
             hikari:
               connection_timeout: 60000 #Connection timeout
