@@ -157,7 +157,7 @@ ibm-sfg-prod:
           protocol: TCP
     ingress:
       internal:
-        host: asi-b2bi-nonprod.apps.vbudi-pem-003.cp.fyre.ibm.com
+        host: asi-b2bi-nonprod.apps.vbudi-pem-004.cp.fyre.ibm.com
         tls:
           enabled: true
           secretName: ""
@@ -213,7 +213,7 @@ ibm-sfg-prod:
         #  protocol: TCP
     ingress:
       internal:
-        host: ac-b2bi-nonprod.apps.vbudi-pem-003.cp.fyre.ibm.com
+        host: ac-b2bi-nonprod.apps.vbudi-pem-004.cp.fyre.ibm.com
         tls:
           enabled: true
           secretName: ""
@@ -247,7 +247,7 @@ ibm-sfg-prod:
         # protocol: TCP
     ingress:
       internal:
-        host: api-b2bi-nonprod.apps.vbudi-pem-003.cp.fyre.ibm.com
+        host: api-b2bi-nonprod.apps.vbudi-pem-004.cp.fyre.ibm.com
         tls:
           enabled: true
           secretName: ""
